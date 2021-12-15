@@ -5,7 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <Button
         android:id="@+id/back_button"
         android:layout_width="wrap_content"
@@ -206,25 +214,25 @@
         app:layout_constraintStart_toEndOf="@+id/textV0"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="330dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/text_border"
-        app:layout_constraintStart_toEndOf="@+id/textV0"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text_border"
+            app:layout_constraintStart_toEndOf="@+id/textV0"
+            app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="330dp"
-        android:layout_height="30dp"
-        android:background="@drawable/text_border"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toEndOf="@+id/textV0"
-        app:layout_constraintTop_toBottomOf="@+id/textView0" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text_border"
+            app:layout_constraintStart_toEndOf="@+id/textV0"
+            app:layout_constraintTop_toBottomOf="@+id/textView0" />
 
-    <Button
+        <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -234,19 +242,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textV0"
-        android:layout_width="40dp"
-        android:layout_height="30dp"
-        android:gravity="center"
-        android:background="@drawable/text_border"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
-        android:text="00:00"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textV0"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/text_border"
+            android:gravity="center"
+            android:text="00:00"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+        <TextView
         android:id="@+id/textV1"
         android:layout_width="40dp"
         android:layout_height="30dp"
@@ -257,18 +265,18 @@
         app:layout_constraintStart_toStartOf="@+id/textV0"
         app:layout_constraintTop_toBottomOf="@+id/textV0" />
 
-    <TextView
-        android:id="@+id/textV2"
-        android:layout_width="40dp"
-        android:layout_height="30dp"
-        android:gravity="center"
-        android:background="@drawable/text_border"
-        android:layout_marginTop="8dp"
-        android:text="02:00"
-        app:layout_constraintStart_toStartOf="@+id/textV1"
-        app:layout_constraintTop_toBottomOf="@+id/textV1" />
+        <TextView
+            android:id="@+id/textV2"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text_border"
+            android:gravity="center"
+            android:text="02:00"
+            app:layout_constraintStart_toStartOf="@+id/textV1"
+            app:layout_constraintTop_toBottomOf="@+id/textV1" />
 
-    <TextView
+        <TextView
         android:id="@+id/textV3"
         android:layout_width="40dp"
         android:layout_height="30dp"
@@ -444,18 +452,18 @@
         app:layout_constraintStart_toStartOf="@+id/textV1"
         app:layout_constraintTop_toBottomOf="@+id/textV17" />
 
-    <TextView
-        android:id="@+id/textV19"
-        android:layout_width="40dp"
-        android:layout_height="30dp"
-        android:gravity="center"
-        android:background="@drawable/text_border"
-        android:layout_marginTop="8dp"
-        android:text="19:00"
-        app:layout_constraintStart_toStartOf="@+id/textV1"
-        app:layout_constraintTop_toBottomOf="@+id/textV18" />
+        <TextView
+            android:id="@+id/textV19"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text_border"
+            android:gravity="center"
+            android:text="19:00"
+            app:layout_constraintStart_toStartOf="@+id/textV1"
+            app:layout_constraintTop_toBottomOf="@+id/textV18" />
 
-    <TextView
+        <TextView
         android:id="@+id/textV20"
         android:layout_width="40dp"
         android:layout_height="30dp"
@@ -514,5 +522,7 @@
         android:text="TextView"
         tools:layout_editor_absoluteX="69dp"
         tools:layout_editor_absoluteY="36dp" />
+    </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
